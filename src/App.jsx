@@ -2,19 +2,45 @@
 import './App.css'
 import Datos from './Datos'
 function App() {
- const alumnos=[
+ const pokemones=[
   {
-    nombre:'Carlos',
-    edad:21
+    pokemon:'Aegislash',
+    tipo:'Acero',
+    imagen: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png"
+  },
+  
+  {
+    pokemon:'Chandelure',
+    tipo:'Fuego/Fantasma',
+    imagen: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png '
   },
   {
-    nombre:'Ana',
-    edad:20
-  }
+    pokemon:'Haxorus',
+    tipo:'Dragon',
+    imagen:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png"
+  },
+  {
+    pokemon:'Lapras',
+    tipo:'Hielo',
+    imagen:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"
+  },
+  {
+    pokemon:'Lucario',
+    tipo:'Lucha',
+    imagen:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png"
+  },
+  {
+    pokemon:'Magikarp',
+    tipo:'Agua',
+    imagen:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"
+  },
+
+      
+
  ]
 
   return (
-   <Datos alumnos={alumnos}/>
+   <Datos pokemones={pokemones}/>
   )
 }
 

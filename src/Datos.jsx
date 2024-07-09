@@ -1,11 +1,17 @@
 function Datos(props){
     return(
-        <div>
+        <div className="datos-container">
             {
-              props.alumnos.map((datosAlumnos)=>(
+              props.pokemones.map((datosPokemones)=>(
                 <div>
-                    <h1>{datosAlumnos.nombre}</h1>
-                    <h1>{datosAlumnos.edad}</h1>
+                  <div>
+                    <h1>{datosPokemones.pokemon}</h1> 
+                    <h1>{datosPokemones.tipo}</h1>
+                  </div>
+                    <div>
+                      <img src={datosPokemones.imagen}></img>
+                    </div>
+                   
                 </div>    
 
               ))     
